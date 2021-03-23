@@ -15,7 +15,7 @@ public class CreatingThread1 {
         myThread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Thread thread, Throwable throwable) {
-                System.out.println("Error occured on " + thread.getName() + " error message " + throwable.getMessage());
+                System.out.println("Error occurred on " + thread.getName() + " error message " + throwable.getMessage());
             }
         });
 
@@ -25,7 +25,7 @@ public class CreatingThread1 {
         Thread threadLambda = new Thread(() -> System.out.println("This is from Lambda thread " + Thread.currentThread().getName()));
         threadLambda.setName("threadLambda");
         threadLambda.setUncaughtExceptionHandler((thread, exception) ->
-                System.out.println("Error occured on " + thread.getName() + " error message " + exception.getMessage()));
+                System.out.println("Error occurred on " + thread.getName() + " error message " + exception.getMessage()));
         threadLambda.start();
     }
 }

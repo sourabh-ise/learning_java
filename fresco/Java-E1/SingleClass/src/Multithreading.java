@@ -1,5 +1,35 @@
 import java.util.Scanner;
 
+//https://stackoverflow.com/a/65389652
+class Task1 extends Thread {
+    static int a = 0;
+    static int beg = 0;
+
+    public void run(){
+        for(int i=beg;i < a;i++)
+            Multithreading.threadArray[i] = i;
+    }
+}
+
+class Task2 extends Thread {
+    static int a = 0;
+    static int beg = 0;
+
+    public void run(){
+        for(int i=beg; i< beg + a;i++)
+            Multithreading.threadArray[i] = i;
+    }
+}
+
+class Task3 extends Thread{
+    static int a = 0;
+    static int beg = 0;
+    public void run(){
+        for(int i=beg;i< a + beg;i++)
+            Multithreading.threadArray[i] = i;
+    }
+}
+
 public class Multithreading {
     public static final int[] threadArray = new int[300];
     public static volatile String i = 0 + "";
@@ -34,7 +64,7 @@ public class Multithreading {
         for (int j = begOfTask3; j < threadArray.length; j++) {
             task3String += threadArray[j] + " ";
         }
-        if ((!oneAndTwo.contains(begOfTask3 + "") && sizeOfTask1.contains(Task2.beg + "")) && task3String.equals(checkingString)) {
+        if ((!oneAndTwo.contains(begOfTask3 + "") && sizeOfTask1.contains(Task2.beg + "")) || task3String.equals(checkingString)) {
             return true;
         }
         return false;
@@ -53,35 +83,5 @@ public class Multithreading {
         Task3.a = three;
         Task3.beg = one + two;
         System.out.print(solution.test());
-    }
-
-
-}
-
-class Task1 extends Thread{
-    public static int a;
-    public static int beg;
-
-    @Override
-    public void run() {
-        super.run();
-    }
-}
-
-class Task2  extends Thread{
-    public static int a;
-    public static int beg;
-    @Override
-    public void run() {
-        super.run();
-    }
-}
-
-class Task3  extends Thread{
-    public static int a;
-    public static int beg;
-    @Override
-    public void run() {
-        super.run();
     }
 }
