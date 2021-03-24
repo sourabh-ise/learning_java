@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="HashSetInJava" />
+        <module name="AbstractClass" />
+        <module name="RegularExpressions" />
+        <module name="ArrayListJava" />
+        <module name="TreeMapInJava" />
+        <module name="JDBC" />
+        <module name="StudentGenericClass" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AbstractClass" target="1.8" />
+      <module name="ArrayListJava" target="11" />
+      <module name="HashSetInJava" target="11" />
+      <module name="JDBC" target="11" />
+      <module name="RegularExpressions" target="11" />
+      <module name="StudentGenericClass" target="1.8" />
+      <module name="TreeMapInJava" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

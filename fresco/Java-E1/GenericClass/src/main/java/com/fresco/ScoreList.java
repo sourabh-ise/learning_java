@@ -3,21 +3,19 @@ package com.fresco;
 
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class ScoreList<T> {
-    ArrayList<String> x = new ArrayList<>();
+    ArrayList x;
 
     public void addElement(String e) {
-        x.add(e);
     }
 
     public void removeElement(String e) {
-        x.remove(e);
     }
 
-    public String getElement(String e) {
-        return x.get(x.indexOf(e));
+    public void getElement(String e) {
     }
 
     public void averageValues() {

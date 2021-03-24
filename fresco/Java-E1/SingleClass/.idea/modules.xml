@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AbstractClass/AbstractClass.iml" filepath="$PROJECT_DIR$/../AbstractClass/AbstractClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ArrayListJava/ArrayListJava.iml" filepath="$PROJECT_DIR$/../ArrayListJava/ArrayListJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HashSetInJava/HashSetInJava.iml" filepath="$PROJECT_DIR$/../HashSetInJava/HashSetInJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JDBC/JDBC.iml" filepath="$PROJECT_DIR$/../JDBC/JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-e1.iml" filepath="$PROJECT_DIR$/Java-e1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RegularExpressions/RegularExpressions.iml" filepath="$PROJECT_DIR$/../RegularExpressions/RegularExpressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../GenericClass/StudentGenericClass.iml" filepath="$PROJECT_DIR$/../GenericClass/StudentGenericClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreeMapInJava/TreeMapInJava.iml" filepath="$PROJECT_DIR$/../TreeMapInJava/TreeMapInJava.iml" />
     </modules>
   </component>
 </project>

@@ -6,7 +6,12 @@ import java.util.*;
 
 class Result {
     public static String[] calculateGrade(int[][] students_marks) {
-        return Arrays.stream(students_marks).map(student -> Arrays.stream(student).average().orElse(0)).map(Result::getGrade).toArray(String[]::new);
+        return Arrays.stream(students_marks)
+                .map(student -> Arrays.stream(student)
+                .average()
+                .orElse(0))
+                .map(Result::getGrade)
+                .toArray(String[]::new);
     }
 
     public static String getGrade(Double x){
