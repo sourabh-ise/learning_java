@@ -10,7 +10,8 @@ public class ALPresent {
 
     public boolean isALPresent() throws FileNotFoundException, IOException {
         String line, s = "";
-        File file = new File("/projects/challenge/BusProb/src/main/java/com/fresco/BusProb.java");
+//        File file = new File("/projects/challenge/BusProb/src/main/java/com/fresco/BusProb.java");
+        File file = new File("C:\\Users\\soura\\IdeaProjects\\learning_java\\fresco\\Java-E1\\ArrayList\\src\\main\\java\\com\\fresco\\BusProb.java");
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
         while ((line = br.readLine()) != null)
