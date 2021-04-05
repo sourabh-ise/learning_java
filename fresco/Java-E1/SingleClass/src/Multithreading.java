@@ -7,7 +7,7 @@ class Task1 extends Thread {
 
     public void run(){
         for(int i=beg;i < a;i++)
-            Multithreading.threadArray[i] = i;
+            Multithreading.threadArray[i] = i; // Multithreading.threadArray[i] = i+1; if  line 67 has && check
     }
 }
 
